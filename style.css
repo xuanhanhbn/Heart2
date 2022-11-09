@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: rgb(0, 0, 0);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: 'Dancing Script', cursive;
+}
+canvas {
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+
+  #text{
+    color: whitesmoke;
+    position: absolute;
+    z-index: 10000;
+    font-size: 16px;
+    opacity: 0.1;
+    padding-bottom: 32px;
+  }
