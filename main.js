@@ -217,7 +217,7 @@ var ParticlePool = (function () {
     }
     context.closePath();
     // create the fill
-    context.fillStyle = "#8c0000";
+    context.fillStyle = "pink";
     context.fill();
     // create the image
     var image = new Image();
@@ -240,119 +240,118 @@ var ParticlePool = (function () {
 
     // create new particles
     //outer
-    var amount_ = particleRate * deltaTime/2;
+    var amount_ = (particleRate * deltaTime) / 2;
     for (var i = 0; i < amount_; i++) {
       var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-      var dir = pos.clone().length(settings.particles.velocity*Math.random());
+      var dir = pos.clone().length(settings.particles.velocity * Math.random());
       particles.add(
         canvas.width / 2 + pos.x,
         canvas.height / 2 - pos.y,
-        dir.x ,
-         -dir.y,
+        dir.x,
+        -dir.y
       );
     }
-    var amount_ = particleRate * deltaTime/4;
+    var amount_ = (particleRate * deltaTime) / 4;
     for (var i = 0; i < amount_; i++) {
       var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-      var dir = pos.clone().length(settings.particles.velocity*Math.random());
+      var dir = pos.clone().length(settings.particles.velocity * Math.random());
       particles.add(
-        canvas.width / 2 + pos.x/0.9,
-        canvas.height / 2 - pos.y/0.9,
-        dir.x ,
-         -dir.y,
+        canvas.width / 2 + pos.x / 0.9,
+        canvas.height / 2 - pos.y / 0.9,
+        dir.x,
+        -dir.y
       );
     }
-    var amount_ = particleRate * deltaTime/6;
+    var amount_ = (particleRate * deltaTime) / 6;
     for (var i = 0; i < amount_; i++) {
       var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-      var dir = pos.clone().length(settings.particles.velocity*Math.random());
+      var dir = pos.clone().length(settings.particles.velocity * Math.random());
       particles.add(
-        canvas.width / 2 + pos.x/0.8,
-        canvas.height / 2 - pos.y/0.8,
-        dir.x ,
-         -dir.y,
+        canvas.width / 2 + pos.x / 0.8,
+        canvas.height / 2 - pos.y / 0.8,
+        dir.x,
+        -dir.y
       );
     }
     //inner
-    var amount__ = particleRate * deltaTime/2;
+    var amount__ = (particleRate * deltaTime) / 2;
     for (var i = 0; i < amount__; i++) {
       var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-      var dir = pos.clone().length(settings.particles.velocity*Math.random());
+      var dir = pos.clone().length(settings.particles.velocity * Math.random());
       particles.add(
-        canvas.width / 2 + pos.x/1.1,
-        canvas.height / 2 - pos.y/1.1,
+        canvas.width / 2 + pos.x / 1.1,
+        canvas.height / 2 - pos.y / 1.1,
         -dir.x,
-        dir.y,
+        dir.y
       );
     }
-    var amount___ = particleRate * deltaTime/4;
+    var amount___ = (particleRate * deltaTime) / 4;
     for (var i = 0; i < amount___; i++) {
       var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-      var dir = pos.clone().length(settings.particles.velocity*Math.random());
+      var dir = pos.clone().length(settings.particles.velocity * Math.random());
       particles.add(
-        canvas.width / 2 + pos.x/1.2,
-        canvas.height / 2 - pos.y/1.2,
+        canvas.width / 2 + pos.x / 1.2,
+        canvas.height / 2 - pos.y / 1.2,
         -dir.x,
-        dir.y,
+        dir.y
       );
     }
-    var amount___ = particleRate * deltaTime/6;
+    var amount___ = (particleRate * deltaTime) / 6;
     for (var i = 0; i < amount___; i++) {
       var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-      var dir = pos.clone().length(settings.particles.velocity*Math.random());
+      var dir = pos.clone().length(settings.particles.velocity * Math.random());
       particles.add(
-        canvas.width / 2 + pos.x/1.3,
-        canvas.height / 2 - pos.y/1.3,
+        canvas.width / 2 + pos.x / 1.3,
+        canvas.height / 2 - pos.y / 1.3,
         -dir.x,
-        dir.y,
+        dir.y
       );
     }
-    var amount___ = particleRate * deltaTime/8;
+    var amount___ = (particleRate * deltaTime) / 8;
     for (var i = 0; i < amount___; i++) {
       var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-      var dir = pos.clone().length(settings.particles.velocity*Math.random());
+      var dir = pos.clone().length(settings.particles.velocity * Math.random());
       particles.add(
-        canvas.width / 2 + pos.x/1.4,
-        canvas.height / 2 - pos.y/1.4,
+        canvas.width / 2 + pos.x / 1.4,
+        canvas.height / 2 - pos.y / 1.4,
         -dir.x,
-        dir.y,
+        dir.y
       );
     }
-    var amount___ = particleRate * deltaTime/10;
+    var amount___ = (particleRate * deltaTime) / 10;
     for (var i = 0; i < amount___; i++) {
       var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-      var dir = pos.clone().length(settings.particles.velocity*Math.random());
+      var dir = pos.clone().length(settings.particles.velocity * Math.random());
       particles.add(
-        canvas.width / 2 + pos.x/1.5,
-        canvas.height / 2 - pos.y/1.5,
+        canvas.width / 2 + pos.x / 1.5,
+        canvas.height / 2 - pos.y / 1.5,
         -dir.x,
-        dir.y,
+        dir.y
       );
     }
-    var amount___ = particleRate * deltaTime/12;
+    var amount___ = (particleRate * deltaTime) / 12;
     for (var i = 0; i < amount___; i++) {
       var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-      var dir = pos.clone().length(settings.particles.velocity*Math.random());
+      var dir = pos.clone().length(settings.particles.velocity * Math.random());
       particles.add(
-        canvas.width / 2 + pos.x/1.6,
-        canvas.height / 2 - pos.y/1.6,
+        canvas.width / 2 + pos.x / 1.6,
+        canvas.height / 2 - pos.y / 1.6,
         -dir.x,
-        dir.y,
+        dir.y
       );
     }
     //frame
-    var amount = particleRate * deltaTime*2;
+    var amount = particleRate * deltaTime * 2;
     for (var i = 0; i < amount; i++) {
       var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-      var dir = pos.clone().length(settings.particles.velocity*Math.random());
+      var dir = pos.clone().length(settings.particles.velocity * Math.random());
       particles.add(
         canvas.width / 2 + pos.x,
         canvas.height / 2 - pos.y,
         -dir.x,
-        dir.y,
+        dir.y
       );
     }
-   
 
     // update and draw particles
     particles.update(deltaTime);
@@ -364,13 +363,12 @@ var ParticlePool = (function () {
     canvas.width = 1400;
     canvas.height = 1400;
   }
-//   window.onresize = onResize;
+  //   window.onresize = onResize;
   // delay rendering bootstrap
   setTimeout(function () {
     onResize();
     render();
-  },10)
+  }, 10);
 })(canvas);
 
 document.body.appendChild(canvas);
-
